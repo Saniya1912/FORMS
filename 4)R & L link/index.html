@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-container">
+        <form id="login" class="input-group">   
+            <h1>Login</h1>
+            <input type="text" class="input-field" placeholder="Enter User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn" id="sbtn">Login</button>
+            <p>New account ?<a href="#"  onclick="register()"> Register</a></p>
+       </form>
+   
+   
+       <form id="register" class="input-group">
+        <h1>Register</h1>
+        <input type="text" class="input-field" placeholder="Enter User Id" required>
+        <input type="text" class="input-field" placeholder="Enter E-mail" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions.</span>
+        <button type="submit" class="submit-btn">Register</button>
+        <p>Already have an account ?<a href="#" onclick="login()"> Login</a></p>
+   </form>
+
+    </div>
+    </div>
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        
+        function register()
+        {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+           
+
+        }
+
+        function login()
+        {
+            x.style.left = "50px";
+            y.style.left = "450px";
+           
+
+        }
+    </script>
+    
+</body>
+</html>
